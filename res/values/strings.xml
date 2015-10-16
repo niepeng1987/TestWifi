@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestWifi</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+        <!-- ConfigNetWork -->
+    <string name="config_network_wifi_hide_password">掩藏秘密</string>
+    <string name="config_network_wifi_display_password">显示秘密</string>
+    <string name="config_network_wifi_password_not_null">WIFI 密码不能为空</string>
+    <string name="config_network_wifi_connected">WIFI 已经连接成功</string>
+    <string name="config_network_wifi_disconnected">WIFI 连接已经断开</string>
+    <string name="config_network_wifi_connected_success">连接 WIFI %1$s 成功</string>
+    <string name="config_network_wifi_connected_failed">连接 WIFI %1$s 失败</string>
+    <string name="config_network_wifi_password_input_error">WIFI密码有误，请重新输入</string>
+
+</resources>

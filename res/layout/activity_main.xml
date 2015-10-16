@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#ffa340" >
+
+        <TextView
+            android:id="@+id/fragment_config_net_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fragment_config_net_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_config_net_cancle"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="25dp"
+            android:text="准备连接WIFI"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_below="@+id/fragment_config_net_tv"
+            android:layout_marginTop="55dp" 
+            >
+			<View android:layout_width="match_parent" android:layout_height="25dp"/>
+            <EditText
+                android:id="@+id/fragment_config_net_wifiname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/startconfig_image2"
+                android:drawableLeft="@drawable/startconfig_image1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/startconfig_next01"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:text="1357024682"
+                android:textColor="@android:color/black" />
+            
+
+            <RelativeLayout
+                android:id="@+id/fragment_config_net_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/startconfig_image2"
+                android:layout_below="@+id/fragment_config_net_wifiname"
+                android:layout_marginTop="30dp" >
+
+                <EditText
+                    android:id="@+id/fragment_config_net_wifipassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+               		android:background="@color/transparent"
+                    android:drawableLeft="@drawable/startconfig_image4"
+                    android:layout_toLeftOf="@+id/fragment_config_net_hide_password"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:text="Ring"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:inputType="textPassword"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/fragment_config_net_hide_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dip"
+                    android:text="隐藏密码"
+                    android:textColor="#ffa340"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/wifi_name_list_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@color/transparent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_alignLeft="@+id/fragment_config_net_wifiname"
+                android:layout_below="@+id/fragment_config_net_wifiname"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/wifi_name_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@color/transparent"
+                    android:listSelector="@drawable/wifi_name_bg_listview"
+                    android:background="@drawable/wifi_name_bg_listview"
+                    android:divider="@color/little_gray"
+                    android:dividerHeight="0.5dp"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#f4f4f4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fragment_config_net_wifi_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:maxLength="100"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="准备连接WIFI"
+            android:textColor="#f17c2d"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:maxLength="100"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:singleLine="true"
+            android:text="将摄像头与手机连接同一个WIFI"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+		<View android:layout_width="1dp"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"/>
+        <Button
+            android:id="@+id/fragment_config_net_next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/mydevice_camera_config"
+            android:text="开始配置"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>
